@@ -1,46 +1,125 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Hello World</title>
+		<title>Demo Site</title>
 		<style>
-
-		ul {
-    			list-style-type: none;
-    			margin: 0;
-    			padding: 0;
-    			overflow: hidden;
-    			background-color: #333;
-			font-family: Comic Sans MS;
+		
+		h1{
+			color: black;
+			font-size: 50px;
+			font-family: Helvetica Neue;
+            font-weight: bold;
+			margin-left: 5%;
+			margin-top: 20px;
 		}
-
-		li {
+		#navBarul{
+    		list-style-type: none;
+    		margin: 0;
+    		padding: 0;
+   			overflow: hidden;
+   			background-color: #333;
+			font-family: Helvetica Neue;
+            font-weight: lighter;
+			font-size: 18px;
+		}
+		.navBarli {
     			float: left;
 		}
-
-		li a {
+		.navBarli a {
     			display: block;
     			color: white;
     			text-align: center;
     			padding: 14px 16px;
     			text-decoration: none;
 		}
+		.navBarli a:hover {
+    		background-color: #60C3F8;
+		}
 
-		li a:hover {
-    			background-color: #111;
+		p{
+			font-size: 18px;
+			font-family: Helvetica Neue;
+            font-weight: normal;
+			margin: 10px 10px;
+		}
+
+		.active{
+			background-color: #60C3F8;
+		}
+
+		.listItem{
+			padding-bottom: 25px;
+		}
+		#listOfRecommendedItems{
+			list-style-type: none;
+
+		}
+		#link a{
+			text-decoration: none;
+			color: #60C3F8;
+			background-color: white;
+			font-size: 35px;
+			font-family: Arial;
+			border: 10px solid white;
+			border-radius: 5px;
+			margin-left: 20%;
+			margin-top: 10%;
+			/*display: inline-block;*/
+		}
+
+		#link a:hover{
+			color: white;
+			background-color: #60C3F8;
+			border: 10px solid #60C3F8;
+			font-weight: lighter;
+		} 
+
+		#SublimeImg, #W3Img{
+			padding-left: 65%;
+			
+			height: auto;
+			margin-bottom: 15px;
+		}
+		#SublimeImg{
+			width: 17%;
+		}
+		#W3Img{
+			width: 27%;
 		}
 		</style>
 	</head>
 
 	<body>
-	
-	
-		
-	<ul>
-  		<li><a class="active" href="#home">Home</a></li>
-  		<li><a href="#news">Student 1</a></li>
-  		<li><a href="#contact">Student 2</a></li>
-  		<li><a href="#about">Student 3</a></li>
-	</ul>
-		
+
+		<ul id="navBarul">
+  			<li class="navBarli"><a class="active" href="#home">Home</a></li>
+  			<li class="navBarli"><a href="">Student 1</a></li>
+  			<li class="navBarli"><a href="">Student 2</a></li>
+  			<li class="navBarli"><a href="">Student 3</a></li>
+  			<li class="navBarli"><a href="">Student 4</a></li>
+		</ul>
+
+		<h1> Some Resources I Recommend</h1>
+
+		<ul id="listOfRecommendedItems">
+
+			<li class="listItem">
+				<p id="subplug"> Sublime Text is a sophisticated text editor for code, markup and prose.  It is free and works on Windows, Mac OS, and Linux. This is my go to text editor and I strongly recomend it!</p>
+				<img id="SublimeImg" src="sublimeLogo.png">
+				<div id="link">
+					<a href="https://www.sublimetext.com">Get Sublime Text</a>
+				</div>
+			</li>
+
+			<li class="listItem">
+				<p id="w3plug"> W3 Schools is an amazing resource for finding out anything about HTML, CSS, Javascript, JQuery, and much more.</p>
+				<img id="W3Img" src="W3Logo.png">
+				<div id="link">
+					<a href="https://www.W3schools.com">Got To W3Schools</a>
+				</div>
+			</li>
+
+		</ul>
+
 	</body>
 </html>
