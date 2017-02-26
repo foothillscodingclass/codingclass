@@ -1,0 +1,44 @@
+Week 1
+Introduction
+Hello World
+head, h1, p, body, style, title
+Hello CSS
+font, colour, size
+
+Week 2
+Exploring more tags
+ul, ol, 
+Exploring more CSS
+position, margin, hover
+Building a menu bar
+
+Week 3
+Linking Multiple Pages
+href=“”
+<div> Lets be together </div>
+div
+Adding Images 
+img
+
+Week 4
+CSS ID vs Class
+
+Week 5
+Start Thinking About Their Own Web Sites
+How to use GitHub Pages
+
+Week 6
+Start their own website
+CSS font weight, Text decoration
+
+Week 7
+CSS Shadow
+
+Week 8
+CSS Boarder
+
+Week 9
+Make sure that everyone is on track to finish on time
+
+Week 10
+Finish their own websites and add them to Git Hub Pages
