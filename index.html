@@ -2,6 +2,9 @@
 <html>
 	<head>
 		<title>Demo Site</title>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
 		<style>
 		
 		h1{
@@ -12,6 +15,24 @@
 			margin-left: 5%;
 			margin-top: 20px;
 		}
+
+		h2{
+			color: black;
+			font-size: 50px;
+			font-family: Helvetica;
+			font-weight: bold;
+			margin-left: 5%;
+			margin-top: 50px
+		}
+
+		h3{
+			color: black;
+			font-size: 25px;
+			font-family: Helvetica;
+			margin-top: 5%;
+
+		}
+
 		#navBarul{
     		list-style-type: none;
     		margin: 0;
@@ -52,7 +73,7 @@
 		}
 		#listOfRecommendedItems{
 			list-style-type: none;
-
+			/*background-color: #EBECED;*/
 		}
 		#link a{
 			text-decoration: none;
@@ -86,6 +107,13 @@
 		#W3Img{
 			width: 27%;
 		}
+
+
+		#listOfWeeks{
+			list-style-type: none;
+
+		}
+
 		</style>
 	</head>
 
@@ -97,6 +125,11 @@
   			<li class="navBarli"><a href="">Student 2</a></li>
   			<li class="navBarli"><a href="">Student 3</a></li>
   			<li class="navBarli"><a href="">Student 4</a></li>
+  			<li class="navBarli"><a href="">Student 5</a></li>
+  			<li class="navBarli"><a href="">Student 6</a></li>
+  			<li class="navBarli"><a href="">Student 7</a></li>
+  			<li class="navBarli"><a href="">Student 8</a></li>
+  			<li class="navBarli"><a href="">Student 8</a></li>
 		</ul>
 
 		<h1> Some Resources I Recommend</h1>
@@ -104,7 +137,7 @@
 		<ul id="listOfRecommendedItems">
 
 			<li class="listItem">
-				<p id="subplug"> Sublime Text is a sophisticated text editor for code, markup and prose.  It is free and works on Windows, Mac OS, and Linux. This is my go to text editor and I strongly recomend it!</p>
+				<p id="subplug"> Sublime Text is a sophisticated text editor for coding.  It is free and works on Windows, Mac OS, and Linux. This is my go to text editor and I strongly recomend it!</p>
 				<img id="SublimeImg" src="sublimeLogo.png">
 				<div id="link">
 					<a href="https://www.sublimetext.com">Get Sublime Text</a>
@@ -121,5 +154,86 @@
 
 		</ul>
 
+		<h2>What We Will Be Learning</h2>
+		
+		<ul id="listOfWeeks">
+			<li id="week1" class="week">
+				<h3>Week One</h3>
+				<p>
+				Introduction <br>
+				Hello World <br>
+				Tags: head, body, h1, p, style, title <br>
+				Hello CSS <br>
+				CSS: font, color
+				</p>
+			</li>
+			<li id="week2" class="week">
+				<h3>Week Two</h3>
+				<p>
+				Exploring More Tags: <br>
+				Tags: ul, ol <br>
+				Exploring More CSS: <br>
+				CSS: position, margin, padding, boarder <br>
+				Building A Menu Bar
+				</p>
+			</li>
+			<li id="week3" class="week">
+				<h3>Week Three</h3>
+				<p>
+				Linking Multiple Pages <br>
+				Adding Images <br>
+				Tags: div, img, href <br>
+				</p>
+			</li>
+			<li id="week4" class="week">
+				<h3>Week Four</h3>
+				<p>
+				CSS: Id and Class <br>
+				Image Gallery
+				</p>
+			</li>
+			<li id="week5" class="week">
+				<h3>Week Five</h3>
+				<p>
+				Start Thinking About Their Own Websites. <br>
+				How to use Git Hub Pages. 
+
+				</p>
+			</li>
+			<li id="week6" class="week">
+				<h3>Week Six</h3>
+				<p>
+				Start their own websites. <br>
+				CSS: font weight, text decoration
+				</p>
+			</li>
+			<li id="week7" class="week">
+				<h3>Week Seven</h3>
+				<p>
+					CSS: Shadow <br>
+				</p>
+			</li>
+			<li id="week8" class="week">
+				<h3>Week Eight</h3>
+				<p>
+					CSS: Boarder <br>
+				</p>
+			</li>
+			<li id="week9" class="week">
+				<h3>Week Nine</h3>
+				<p>
+					Make sure that everyone is on track to finish next week.
+				</p>
+			</li>
+			<li id="week10" class="week">
+				<h3>Week Ten</h3>
+				<p>
+					Finish their own websites and add them to Git Hub Pages.
+				</p>
+			</li>
+
+		</ul>
+
 	</body>
+	
 </html>
