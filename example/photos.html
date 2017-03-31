@@ -1,0 +1,146 @@
+<html>
+  <head>
+    <title>Photos</title>
+    <style>
+      .img {
+          margin: 15px;
+          border: 5px solid white;
+          font-family: Helvetica Neue;
+          font-weight: lighter;
+          font-size: 25px;
+          background-color: white;
+          width: 60%;
+          margin-left:auto;
+          margin-right:auto; 
+          color: white;
+          -webkit-transition: width 0.5s;
+          transition: width 0.5s;    
+      }
+
+      .desc {
+        -webkit-transition: color 0.5s;
+          transition: color 0.5s;
+      }
+      .img:hover{
+        width: 70%;
+      }
+      .img:hover .desc {
+          color: black;
+      }
+
+      .img img {
+          width: 100%;
+          height: auto;
+      }
+
+      .desc {
+          padding: 15px;
+          text-align: center;
+      }
+
+      #long{
+        width: 40%;
+        -webkit-transition: width 0.5s;
+          transition: width 0.5s; 
+      }
+
+      #long:hover {
+        width: 50%;
+      }
+
+      #navBarul{
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+          overflow: hidden;
+          background-color: #333;
+          font-family: Helvetica Neue;
+          font-weight: lighter;
+          font-size: 18px;
+
+      }
+      .navBarli {
+          float: left;
+
+      }
+      .navBarli a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            overflow: scroll;
+      }
+      .navBarli a:hover {
+          background-color: #60C3F8;
+      }
+
+      p{
+        font-size: 18px;
+        font-family: Helvetica Neue;
+        font-weight: normal;
+        margin: 10px 10px;
+      }
+
+      .active{
+        background-color: #60C3F8;
+      }
+
+    </style>
+  </head>
+  <body>
+    <ul id="navBarul">
+      <li class="navBarli"><a href="index.html">Home</a></li>
+      <li class="navBarli"><a href="penguin.html">Penguins</a></li>
+      <li class="navBarli"><a class="active" href="photos.html">Photos</a></li>
+      <li class="navBarli"><a href="music.html">Music Boxes</a></li>
+      <li class="navBarli"><a href="clock.html">Clock</a></li>
+    </ul>
+
+    <div class="img">
+      <img src="photos/mushroom.png" alt="No Image">
+      <div class="desc">Banff, Alberta</div>
+    </div>
+
+    <div class="img">
+      <img src="photos/sky.png" alt="No Image">
+      <div class="desc">Banff, Alberta</div>
+    </div>
+
+    <div class="img">
+      <img src="photos/trees1.png" alt="No Image">
+      <div class="desc">Calgary, Alberta</div>
+    </div>
+
+    <div class="img" id="long">
+      <img src="photos/rock.png" alt="No Image">
+      <div class="desc">Vancouver, British Columbia</div>
+    </div>
+
+    <div class="img">
+      <img src="photos/trees2.png" alt="No Image">
+      <div class="desc">Victoria Peak, Hong Kong</div>
+    </div>
+
+    <div class="img">
+      <img src="photos/beach.png" alt="No Image">
+      <div class="desc">Vancouver, British Columbia</div>
+    </div>
+
+    <div class="img">
+      <img src="photos/animals.png" alt="No Image">
+      <div class="desc">Salmon Arm, British Columbia</div>
+    </div>
+
+    <div class="img">
+      <img src="photos/sunset.png" alt="No Image">
+      <div class="desc">Vancouver, British Columbia</div>
+    </div>
+
+    <div class="img">
+      <img src="photos/mountian.png" alt="No Image">
+      <div class="desc">Tai O, Hong Kong</div>
+    </div>
+
+  </body>
+</html>

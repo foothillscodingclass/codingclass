@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<style>
+	/********** NAV BAR **********/
+		#navBarul{
+    		list-style-type: none;
+    		margin: 0;
+    		padding: 0;
+   			overflow: hidden;
+   			background-color: #333;
+			font-family: Helvetica Neue;
+            font-weight: lighter;
+			font-size: 18px;
+
+		}
+		.navBarli {
+    		float: left;
+
+		}
+		.navBarli a {
+    			display: block;
+    			color: white;
+    			text-align: center;
+    			padding: 14px 16px;
+    			text-decoration: none;
+    			overflow: scroll;
+		}
+		.navBarli a:hover {
+    		background-color: #60C3F8;
+		}
+
+		p{
+			font-size: 18px;
+			font-family: Helvetica Neue;
+            font-weight: normal;
+			margin: 10px 10px;
+		}
+
+		.active{
+			background-color: #60C3F8;
+		}
+
+	/********** NAV BAR **********/
+
+		body {
+    		background-color: black;   
+		}
+
+#instrument {
+    height: 116px;
+    width: 812px;
+    padding-right: 10px;
+    padding-top: 50px;
+    margin: auto;
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+}
+.box {
+    width: 100px;
+    height: 100px;
+    margin-left: 10px;
+    margin-top: 10px;
+    float:left;
+}
+#c {
+    background-color: #3e181b;
+    border: 3px solid #db1d2d;
+}
+
+#d {
+    background-color: #422018;
+    border: 3px solid #f0421c;
+}
+
+#e {
+    background-color: #45391b;
+    border: 3px solid #fec02d;
+}
+
+#f {
+    background-color: #193c29;
+    border: 3px solid #20d071;
+}
+
+#g {
+    background-color: #18323e;
+    border: 3px solid #1a9ddb;
+}
+
+#a {
+    background-color: #331f35;
+    border: 3px solid #a13fad;
+} 
+
+#b {
+    background-color: #43293d;
+    border: 3px solid #f26fd4;
+}
+
+#c:hover {
+    background-color:#db1d2d;
+    cursor: pointer;
+}
+
+#d:hover {
+	background-color:#f0421c;
+    cursor: pointer;
+}
+
+#e:hover {
+	background-color:#fec02d;
+    cursor: pointer;
+}
+
+#f:hover {
+	background-color: #20d071;
+    cursor: pointer;
+}
+
+#g:hover {
+	background-color: #1a9ddb;
+    cursor: pointer;
+}
+
+
+#a:hover {
+	background-color: #a13fad;
+    cursor: pointer;
+}
+
+
+#b:hover {
+	background-color: #f26fd4;
+    cursor: pointer;
+}
+
+	</style>
+	
+</head>
+<body>
+	<!-- /********** NAV BAR **********/ -->
+		<ul id="navBarul">
+  			<li class="navBarli"><a href="index.html">Home</a></li>
+  			<li class="navBarli"><a href="penguin.html">Penguins</a></li>
+  			<li class="navBarli"><a href="photos.html">Photos</a></li>
+  			<li class="navBarli"><a class="active" href="music.html">Music Boxes</a></li>
+  			<li class="navBarli"><a href="clock.html">Clock</a></li>
+		</ul>
+	<!-- /********** NAV BAR **********/ -->
+
+    <audio id="cAudio">
+    	<source src="music_notes/c_note.mp3" type="audio/mpeg"></source>
+    	<source src="music_notes/c_note.ogg" type="audio/ogg"></source>
+    	<source src="music_notes/c_note.wav" type="audio/wav"></source>  
+	</audio>
+	<audio id="dAudio">
+    	<source src="music_notes/d_note.mp3" type="audio/mpeg"></source>
+    	<source src="music_notes/d_note.ogg" type="audio/ogg"></source>
+    	<source src="music_notes/d_note.wav" type="audio/wav"></source>  
+	</audio>
+	<audio id="eAudio">
+    	<source src="music_notes/e_note.mp3" type="audio/mpeg"></source>
+    	<source src="music_notes/e_note.ogg" type="audio/ogg"></source>
+    	<source src="music_notes/e_note.wav" type="audio/wav"></source>  
+	</audio>
+	<audio id="fAudio">
+    	<source src="music_notes/f_note.mp3" type="audio/mpeg"></source>
+    	<source src="music_notes/f_note.ogg" type="audio/ogg"></source>
+    	<source src="music_notes/f_note.wav" type="audio/wav"></source>  
+	</audio>
+	<audio id="gAudio">
+    	<source src="music_notes/g_note.mp3" type="audio/mpeg"></source>
+    	<source src="music_notes/g_note.ogg" type="audio/ogg"></source>
+    	<source src="music_notes/g_note.wav" type="audio/wav"></source>  
+	</audio>
+	<audio id="aAudio">
+    	<source src="music_notes/a_note.mp3" type="audio/mpeg"></source>
+    	<source src="music_notes/a_note.ogg" type="audio/ogg"></source>
+    	<source src="music_notes/a_note.wav" type="audio/wav"></source>  
+	</audio>
+	<audio id="bAudio">
+    	<source src="music_notes/b_note.mp3" type="audio/mpeg"></source>
+    	<source src="music_notes/b_note.ogg" type="audio/ogg"></source>
+    	<source src="music_notes/b_note.wav" type="audio/wav"></source>  
+	</audio>
+	<div id="instrument">
+	<div id="c" class="box"></div>
+	<div id="d" class="box"></div>
+	<div id="e" class="box"></div>
+	<div id="f" class="box"></div>
+	<div id="g" class="box"></div>
+	<div id="a" class="box"></div>
+	<div id="b" class="box"></div>
+</div>
+</body>
+<script>
+		var cNote = document.getElementById('cAudio');
+		$('#c').mouseover(function(){
+    		cNote.currentTime = 0;
+    		cNote.play();
+		});
+
+		var dNote = document.getElementById('dAudio');
+		$('#d').mouseover(function(){
+    		dNote.currentTime = 0;
+    		dNote.play();
+		});
+
+		var eNote = document.getElementById('eAudio');
+		$('#e').mouseover(function(){
+    		eNote.currentTime = 0;
+    		eNote.play();
+		});
+
+		var fNote = document.getElementById('fAudio');
+		$('#f').mouseover(function(){
+    		fNote.currentTime = 0;
+    		fNote.play();
+		});
+
+		var gNote = document.getElementById('gAudio');
+		$('#g').mouseover(function(){
+    		gNote.currentTime = 0;
+    		gNote.play();
+		});
+
+		var aNote = document.getElementById('aAudio');
+		$('#a').mouseover(function(){
+    		aNote.currentTime = 0;
+    		aNote.play();
+		});
+
+		var bNote = document.getElementById('bAudio');
+		$('#b').mouseover(function(){
+    		bNote.currentTime = 0;
+    		bNote.play();
+		});
+	</script>
+</html>

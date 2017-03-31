@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Penguins</title>
+    <style>
+        
+        /********** NAV BAR **********/
+        #navBarul{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333; 
+            font-family: Helvetica Neue;
+            font-weight: lighter;
+            font-size: 18px;
+
+        }
+        .navBarli {
+            float: left;
+
+        }
+        .navBarli a {
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                overflow: scroll;
+        }
+        .navBarli a:hover {
+            background-color: #60C3F8;
+        }
+
+        .active{
+            background-color: #60C3F8;
+        }
+
+        body {
+            background-color: PaleTurquoise;
+        }
+
+        #gameholder {
+            width: 400px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        #penguin1, #penguin2, #penguin3,#penguin4{
+            width: 200px;
+            height: 200px;
+            float: left;
+            background-image:url('mound.png');
+        }
+
+        #penguin1:hover, #penguin2:hover, #penguin3:hover, #penguin4:hover {
+            background-image:url('mound_hover.png');
+            cursor: pointer;
+        }
+    
+        #penguin1:active, #penguin2:active, #penguin3:active, #penguin4:active {
+            background-image:url('penguin.png');
+        }
+
+    </style>
+</head>
+<body>
+    <!-- /********** NAV BAR **********/ -->
+    <ul id="navBarul">
+        <li class="navBarli"><a href="index.html">Home</a></li>
+        <li class="navBarli"><a class="active" href="penguin.html">Penguins</a></li>
+        <li class="navBarli"><a href="photos.html">Photos</a></li>
+        <li class="navBarli"><a href="music.html">Music Boxes</a></li>
+        <li class="navBarli"><a href="clock.html">Clock</a></li>
+    </ul>
+    <div id="gameholder">
+        <div id="penguin1"></div>
+        <div id="penguin2"></div>
+        <div id="penguin3"></div>
+        <div id="penguin4"></div>
+    </div>
+</body>
+</html>
