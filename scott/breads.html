@@ -1,0 +1,188 @@
+<!Doctype html>
+
+<html>
+
+<head>
+
+<title>Dat website </title>
+<script>
+var bread = 0
+var addamount = 1
+var level = 0
+var level2 = 0
+var level3 = 0
+var price = 400
+var price2 = 1000
+var price3 = 1000000
+
+function add(){
+bread = bread + addamount 
+document.getElementById("label").innerHTML = "Amount of Cookies: " + bread
+}
+
+function buy(){
+if (bread>=price){
+level = level + 1
+price = price + (price/20)
+addamount = addamount + 1
+bread = bread - 400
+document.getElementById("priceLabel").innerHTML = "Price: " + price
+document.getElementById("label").innerHTML = "Amount of Cookies: " + bread
+document.getElementById("levelLable").innerHTML = "level:" + level
+	}
+}
+
+function buy1(){
+if (bread>=price2){
+level2 = level2 + 1
+price = price + (price/20)
+addamount = addamount + 5
+bread = bread - 1000
+document.getElementById("label").innerHTML = "Amount of Cookies: " + bread
+document.getElementById("levelLable2").innerHTML = "level:" + level2
+document.getElementById("priceLabel2").innerHTML = "Price: " + price2
+	}
+}
+
+function buy2(){
+if (bread>=price3){
+level3 = level3 + 1
+price3 = price3 + (price/20)
+addamount = addamount + 100000
+bread = bread - 1000000
+document.getElementById("label").innerHTML = "Amount of Cookies: " + bread
+document.getElementById("levelLable3").innerHTML = "level:" + level3
+document.getElementById("priceLabel3").innerHTML = "Price: " + price3
+	}
+}
+
+
+
+
+</script>
+<style>
+
+
+ul {
+list-style-type:none;
+margin: 0;
+padding: 0;
+overflow: hidden;
+background-color: Black;
+}
+
+a{
+float: left;
+display: block;
+color: Orchid;
+padding: 14px 16px;
+text-align: center;
+text-decoration: none;
+font-family: Impact;
+}
+a:hover{
+background-color: red;
+color:white;
+}
+.active{
+background-color:SkyBlue;
+color:yellow;
+}
+
+
+body{
+background-image: url("Cookie_Background2.jpg");
+}
+
+
+
+#label{
+font-family:arial;
+font-size:60px;
+text-align:center;
+padding:50px;
+}
+img{
+display: block;
+margin: 0 auto;
+width:30%;
+height:auto;
+}
+
+img:active{
+width:29%;
+height:auto;
+}
+
+
+#insaneCookies{
+font-family:Arial;
+width:200px;
+position: absolute;
+bottom:400px;
+left:0px;
+text-align:center;
+}
+#coolCookies{
+font-family:Arial;
+width:200px;
+position: absolute;
+bottom:200px;
+left:0px;
+text-align:center;
+}
+
+#megaCookies{
+font-family:Arial;
+width:200px;
+position: absolute;
+bottom:0px;
+left:0px;
+text-align:center;
+}
+
+</style>
+</head>
+
+<body>
+<ul>
+<li><a href="home.html">Home</a> </li>
+<li><a class="active" href="breads.html">Idle Cookies</a> </li>
+<li><a href="Photos.html">Pictures</a> </li>
+<li><a href="penguin.html">Charizard</a> </li>
+<li><a href="Penguins_real.html">Penguins</a> </li>
+</ul>
+
+
+<h1 id="label">Amount of Cookies: 0</h1>
+<img src="cookie.png" onclick="add()">
+<div id="insaneCookies">
+	<p>Insane Cookies</p>
+	<p id= "pricelabel">Cost: 400 cookies</p>
+	<p>+1 every click</p>
+	<p id="levelLable">Level: 0</p>
+	<img src="cool_cookie.png" id="cool_cookie_image" onclick="buy()">
+</div>
+<div id="coolCookies">
+	<p>Cool Cookies</p>
+	<p id="pricelabel2">Cost: 1,000 cookies</p>
+	<p>+5 every click</p>
+	<p id="levelLable2">Level: 0</p>
+	<img src="cool_cookie.png" id="cool_cookie_image" onclick="buy1()">
+</div>
+
+
+<div id="megaCookies">
+	<p>MEGA COOKIES</p>
+	<p id= "pricelabel3">Cost: 1,000,000 cookies</p>
+	<p>+10000 every click</p>
+	<p id="levelLable3">Level: 0</p>
+	<img src="cool_cookie.png" id="cool_cookie_image" onclick="buy2()">
+</div>
+
+
+</body>
+
+
+
+</html>

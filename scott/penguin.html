@@ -1,0 +1,90 @@
+<!Doctype html>
+<html>
+<head>
+<title> Dat website </title>
+
+<style>
+
+ul {
+list-style-type:none;
+margin: 0;
+padding: 0;
+overflow: hidden;
+background-color: DimGray;
+}
+
+a{
+float: left;
+display: block;
+color: Orchid;
+padding: 14px 16px;
+text-align: center;
+text-decoration: none;
+font-family: Impact;
+}
+a:hover{
+background-color: red;
+color:white;
+}
+.active{
+background-color:SkyBlue;
+color:yellow;
+}
+
+
+
+
+
+
+body{
+	background-color: White;
+	}
+    #gameholder{
+	width:400px;
+	margin-left:auto;
+	margin-right:auto;
+}
+#penguin1, #penguin2, #penguin3, #penguin4{
+width: 156px;
+height:173px;
+float:left;
+background-image:url("charmander.jpg");
+}
+
+#penguin1:hover,#penguin2:hover,#penguin3:hover,#penguin4:hover{
+background-image:url("charmeleon.jpg");
+}
+
+
+
+#penguin1:active,#penguin2:active,#penguin3:active,#penguin4:active{
+background-image:url("charizard.jpg");
+}
+
+
+</style>
+</head>
+<body>
+
+<ul>
+<li><a href="index.html">Home</a> </li>
+<li><a href="breads.html">Idle Cookies</a> </li>
+<li><a href="Photos.html">Pictures</a> </li>
+<li><a class="active" href="penguin.html">Charizard</a> </li>
+<li><a href="Penguins_real.html">Penguins</a> </li>
+</ul>
+
+
+
+
+
+<div>
+  <div id="gameholder">
+    <div id="penguin1"> </div>
+    <div id="penguin2"> </div>
+    <div id="penguin3"> </div>
+    <div id="penguin4"> </div>
+  </div>
+</div>
+</body>
+</html>
