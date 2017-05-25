@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Clicking the Toast</title>
+	
+	<script>
+		var toest = 0
+		var addAmount = 1
+		var level = 0
+		var levelR = 0
+
+		function add(){
+			toest = toest + addAmount
+			document.getElementById("label").
+				innerHTML = "Toast!!!" +
+				toest
+		}
+
+		function buy(){
+			if (toest >= 10){
+			level = level + 1
+			addAmount = + 5
+			toest = toest - 10
+			document.getElementById("label").
+				innerHTML = "Toast!!!" +
+				toest;
+			document.getElementById('levelLabel').innerHTML = "Level: " + level
+		}
+	}
+function buyRainbow(){
+			if (toest >= 50){
+			levelR = levelR + 1
+			addAmount = + 25
+			toest = toest - 50
+			document.getElementById("label").
+				innerHTML = "Toast!!!" +
+				toest;
+			document.getElementById('levelLabelR').innerHTML = "Level: " + levelR
+		}
+	}
+	</script>
+	<style>
+		body{
+			background-image: url("wm192162tt.jpg");
+}
+#label{
+	font-family: Arial;
+	font-size: 60px;
+	text-align: center;
+	padding: 50px;
+}
+img{
+	display:block;
+	margin: 0 auto;
+	widows: 60%;
+	width: 20%;
+}
+img:active{
+	width: 21%;
+	height: auto;
+}
+ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: White
+		}
+
+		a {
+			float: left;
+			display: block;
+			padding: 14px 16px;
+			text-align: center;
+			text-decoration: none;
+		}
+		a:hover{
+			background-color: coral;
+
+		}
+		#buyBreadBox{
+			font-family: Comic Sans Ms;
+			width: 200px;
+			position: absolute;
+			bottom: 0px;
+			left: 0px;
+			text-align: center;
+		}
+		#buyRainbowToastBox{
+			font-family: Comic Sans Ms;
+			width: 200px;
+			position: absolute;
+			bottom: 0px;
+			left: 200px;
+			text-align: center;
+		}
+		body{background-color: White;}
+</style>
+</head>
+<body>
+
+<ul>
+		<li><a href="index.html">Home</a></li>
+		<li><a href="penguin.html">Penguin Game</a></li>
+		<li><a>Toast Clicker</a></li>
+		<li><a href="Photos.html">Photos</a></li>
+		<li><a href="me.html">Other</a></li>
+
+</ul>
+
+	<h1 id="label" >Toast!!! 0</h1>
+	<img src="1364024270_toast.jpg" onclick="add()">
+	<div id="buyBreadBox">
+		<p>Bread</p>
+		<p>Cost: 10 Toast</p>
+		<p>+5 Every Click</p>
+		<p>Level: 0</p>
+		<p id="levelLabel" >Level:0</p>
+		<img id="Toast-1" src="Toast-1.jpg" onclick="buy()">
+	</div>
+
+	<div id="buyRainbowToastBox">
+		<p>RainbowToast</p>
+		<p>Cost: 50 Toast</p>
+		<p>+25 Every Click</p>
+		<p id="levelLabelR" >Level:0</p>
+		<img id="Toast-1" src="thLJ2GJIX3.jpg" onclick="buyRainbow()">
+	</div>
+</body>
+</html>
